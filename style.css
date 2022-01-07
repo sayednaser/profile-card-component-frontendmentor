@@ -30,3 +30,68 @@ body {
 }
 .u-margin-small {
 }
+
+.card-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  background-image: url(images/bg-pattern-card.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-width: 35rem;
+}
+
+.card-picture {
+  display: block;
+  margin: auto;
+  margin-top: 8.95rem;
+
+  border-radius: 500px;
+  border: 5px solid white;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-title-name {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  font-size: inherit;
+  /* text-align: center; */
+  display: inline;
+}
+
+.card-title-age {
+}
+
+.card-location {
+  text-align: center;
+}
+
+.card-stats-stat-value {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  font-size: inherit;
+}
+
+.card-stats-stat-name {
+  font-size: 1.4rem;
+  font-weight: inherit;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-stats-stat {
+  flex: 1 1 0;
+  text-align: center;
+}
