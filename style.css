@@ -25,10 +25,13 @@ body {
 }
 
 .u-margin-big {
-}
-.u-margin-medium {
+  margin-bottom: 2.3rem;
 }
 .u-margin-small {
+  margin-bottom: 0.2rem;
+}
+.u-margin-medium {
+  margin-bottom: 1.5rem;
 }
 
 .card-container {
@@ -36,24 +39,33 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-size: auto;
+  /* background-position: top 189.5% left -53.03%, bottom 240.3% right 53.03%; */
+  background-position: top -489px left -245px, bottom -620px right -245px;
+  background-repeat: no-repeat;
 }
 
 .card {
   background-color: hsl(0, 0%, 100%);
   background-image: url(images/bg-pattern-card.svg);
-  background-position: top;
   background-repeat: no-repeat;
   background-size: auto;
   min-width: 35rem;
+  border-radius: 1.5rem;
 }
 
 .card-picture {
   display: block;
-  margin: auto;
-  margin-top: 8.95rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8.7rem;
 
-  border-radius: 500px;
-  border: 5px solid white;
+  border-radius: 50%;
+  border: 5px solid hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 .card-title {
@@ -64,7 +76,6 @@ body {
   color: hsl(229, 23%, 23%);
   font-weight: 700;
   font-size: inherit;
-  /* text-align: center; */
   display: inline;
 }
 
@@ -72,6 +83,7 @@ body {
 }
 
 .card-location {
+  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -82,8 +94,9 @@ body {
 }
 
 .card-stats-stat-name {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: inherit;
+  color: hsl(0, 0%, 59%);
 }
 
 .card-stats {
@@ -92,6 +105,19 @@ body {
 }
 
 .card-stats-stat {
-  flex: 1 1 0;
+  flex: 0 1 5rem;
   text-align: center;
+}
+
+hr {
+  border: unset;
+
+  border-top: 1px solid hsl(0, 0%, 59%, 0.3);
+}
+
+@media only screen and (max-width: 376px) {
+  .card {
+    min-width: 32.6rem;
+    background-position: top;
+  }
 }
